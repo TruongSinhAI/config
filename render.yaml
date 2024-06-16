@@ -12,11 +12,5 @@ services:
         value: "8080"
       - key: PORT2
         value: "8081"
-    environment:
-      - key: ADDITIONAL_HEADERS
-        value: |
-          [
-            { "key": "Access-Control-Allow-Origin", "value": "*" },
-            { "key": "Access-Control-Allow-Methods", "value": "GET, POST, PUT, DELETE, OPTIONS" },
-            { "key": "Access-Control-Allow-Headers", "value": "Origin, X-Requested-With, Content-Type, Accept" }
-          ]
+      - key: ALLOWED_ORIGIN  # New environment variable
+        value: "https://your-front-end-domain.com"  # Replace with your actual origin
