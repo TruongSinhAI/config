@@ -3,7 +3,7 @@ services:
     name: sinhhuynh:latest
     runtime: image
     image:
-      url: docker.io/0703134283/cursus2:latest
+      url: docker.io/0703134283/cursus3:latest
     plan: free
     region: oregon
     envVars:
