@@ -12,9 +12,3 @@ services:
         value: "8080"
       - key: PORT2
         value: "8081"
-    serviceDetails:
-      ports:
-        - port: 8080
-          protocol: HTTP
-        - port: 8081
-          protocol: HTTP
