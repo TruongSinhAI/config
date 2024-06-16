@@ -1,3 +1,4 @@
+version: "1"
 services:
   - type: web
     name: sinhhuynh:latest
@@ -6,7 +7,8 @@ services:
       url: docker.io/0703134283/cursus3:latest
     plan: free
     region: oregon
-    env:
-      MAIN_SERVICE_URL: http://192.168.1.100:8080
-      AUTH_SERVICE_URL: http://192.168.1.101:8081
-version: "1"
+    envVars:
+      - key: PORT1
+        value: "8080"
+      - key: PORT2
+        value: "8081"
