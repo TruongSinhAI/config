@@ -1,0 +1,20 @@
+version: "1"
+services:
+  - type: web
+    name: sinhhuynh:latest
+    runtime: image
+    image:
+      url: docker.io/0703134283/cursus2:latest
+    plan: free
+    region: oregon
+    envVars:
+      - key: PORT1
+        value: "8080"
+      - key: PORT2
+        value: "8081"
+    serviceDetails:
+      ports:
+        - port: 8080
+          protocol: HTTP
+        - port: 8081
+          protocol: HTTP
